@@ -1,0 +1,55 @@
+.container-custom {
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.forms{
+    background-color: #121212;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input{
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.l-side{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.r-side{
+    width: 100%;
+}
+
+button{
+    background-color: green;
+    transition: all .5s;
+
+    &:hover{
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .l-side{
+       display: none;
+   }
+}
