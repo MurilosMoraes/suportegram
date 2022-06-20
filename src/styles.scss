@@ -6,16 +6,25 @@
 
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 html,
-body{
+body {
     width: 100%;
     height: 100vh;
 }
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+
+// VARIAVEIS DE COR
+:root {
+    --background: #262626;
+}

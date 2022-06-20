@@ -1,1 +1,21 @@
-<p>header works!</p>
+<header>
+    <div>
+        <img routerLink="/home" class="logo" src="https://cdn.discordapp.com/attachments/976668675090313246/982326648512856065/s_copiar.png" alt="">
+    </div>
+    <div>
+        <input placeholder="Pesquisar" type="text">
+    </div>
+
+    <div class="container-icons">
+        <i routerLink="/home" class="bi bi-chat icons"></i>
+        <i routerLink="/admin" class="bi bi-gear icons"></i>
+        <i  routerLink="/dashboard" class="bi bi-speedometer2 icons"></i>
+        <div class="btn-group" dropdown>
+            <i dropdownToggle  class="bi bi-person-circle icons"></i>  
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu sair"
+                 role="menu">
+              <li style="color: white;" role="menuitem"><a class="dropdown-item sair" href="#">Terminar sessão</a></li>
+            </ul>
+          </div>  
+    </div>
+</header>   

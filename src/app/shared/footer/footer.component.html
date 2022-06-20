@@ -1,0 +1,19 @@
+<footer class="footer">
+    <div class="container-icons">
+        <i routerLink="/home" class="bi bi-chat icons"></i>
+        <i routerLink="/admin" class="bi bi-gear icons"></i>
+        <i routerLink="/dashboard" class="bi bi-speedometer2 icons"></i>
+        <i (click)="openModal(template)" class="bi bi-person-circle icons"></i>
+        <ng-template #template>
+            <div class="align-modal">
+                <div class="modal-content">
+                    <h3>Você deseja sair?</h3>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <button class="criar">Sim</button>
+                        <button (click)="modalRef?.hide()" class="sair">Não</button>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</footer>

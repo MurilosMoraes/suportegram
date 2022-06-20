@@ -1,0 +1,102 @@
+.align-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+
+    .modal-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        padding: 2rem 1rem;
+        border: 1px solid white;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    button {
+        border: 1px solid white;
+        padding: .5rem 1rem;
+        background: #121212;
+        color: white;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif !important;
+        margin: 0.5rem 0;
+    }
+    
+    .criar:hover {
+        background-color: rgb(0, 221, 0);
+    }
+    
+    .sair:hover {
+        background: rgb(220, 0, 0);
+    }
+}
+
+.scroll-hidden {
+    overflow: hidden;
+}
+
+html,
+body {
+    background-color: black !important;
+}
+
+footer {
+    background-color: black;
+    bottom: 0px;
+    left: 0;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        display: block;
+    }
+}
+
+.container-icons {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    padding: 8px 0px;
+    height: 100%;
+}
+
+.icons {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    color: #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+    margin: 1rem 1rem;
+    &:focus {
+        outline: none;
+    }
+}

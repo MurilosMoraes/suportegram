@@ -1,0 +1,84 @@
+<app-header></app-header>
+<app-footer></app-footer>
+<div class="container-custom">
+    <div class="d-flex align-items-center justify-content-center w-100 p-container-chat">
+        <div class="l-side">
+            <div class="name-admin">
+                <div class="name">
+                    <p>mariiio.h</p>
+                </div>
+            </div>
+            <div class="form">
+                <!-- IMPUT MOBILE -->
+                <div class="seach">
+                    <div class="seach-input">
+                        <input placeholder="Pesquisar" type="text">
+                    </div>
+                </div>
+                <div class="scroll-list ">
+                    <div *ngFor="let userData of contatosData" class="name">
+                        <img class="logos"
+                            [src]="userData.url"
+                            alt="">
+                        <p>{{userData.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="r-side">
+            <div class="forms">
+                <div class="user">
+                    <img src="https://cdn.discordapp.com/attachments/930491194633519164/984235258864091136/unknown.png">
+                    <p>Fauzi Halabe</p>
+                </div>
+                <div class="chat">
+                    <div class="scroll-chat">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <p class="user-1">Bom dia!!Bom dia!!Bom dia!!</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <p class="user-1">Bom dia!!Bom dia!!Bom dia!!</p>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p class="user-2">Olar tud bem???Olar tud bem???Olar tud bem???</p>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p class="user-2">Olar tud bem???Olar tud bem???Olar tud bem???</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <p class="user-1">Bom dia!!Bom dia!!Bom dia!!</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <p class="user-1">Bom dia!!Bom dia!!Bom dia!!</p>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p class="user-2">Olar tud bem???Olar tud bem???Olar tud bem???</p>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p class="user-2">Olar tud bem???Olar tud bem???Olar tud bem???</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <p class="user-1">Bom dia!!Bom dia!!Bom dia!!</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <p class="user-1">Bom dia!!Bom dia!!Bom dia!!</p>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p class="user-2">Olar tud bem???Olar tud bem???Olar tud bem???</p>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p class="user-2">Olar tud bem???Olar tud bem???Olar tud bem???</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-send">
+                    <div class="enviar">
+                        <textarea class="px-4 py-2" placeholder="Mensagem..."></textarea>
+                        <i class="bi bi-send w-80"></i>
+                        <p class="naoSelecionavel" unselectable="on">Enviar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<app-header></app-header>
+<app-footer></app-footer>
+<div class="container-custom">
+    <div class="d-flex align-items-center justify-content-center w-100 p-container-chat">
+        <div class="l-side">
+            <div class="form">
+                <!-- IMPUT MOBILE -->
+                <div class="seach">
+                    <div class="seach-input">
+                        <input placeholder="Pesquisar" type="text">
+                    </div>
+                </div>
+                <div class="scroll-list ">
+                    <div *ngFor="let userData of listOperator" class="name">
+                        <img class="logos" [src]="userData.url" alt="">
+                        <p>{{userData.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="r-side">
+            <div class="forms">
+                <div class="user" *ngFor="let userStatistics of operatorStatistics">
+                    <img [src]="userStatistics.url" alt="">
+                    <p>{{userStatistics.name}}</p>
+                </div>
+                <div class="chat">
+                    <div class="scroll-chat">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="card">
+                                <h3>Conversas Atendidas</h3>
+                                <h2>50</h2>
+                            </div>
+                            <div class="card">
+                                <h3>Respostas</h3>
+                                <h2>120</h2>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="card d-flex justify-content-center align-items-center">
+                                <h3>Tempo Ativo</h3>
+                                <h2>10Hrs</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

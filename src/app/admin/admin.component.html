@@ -1,0 +1,62 @@
+<app-header></app-header>
+<app-footer></app-footer>
+<div class="container-custom">
+    <div class="list-container">
+        <div class="d-flex align-items-center justify-content-between">
+            <h3>OPERADORES</h3>
+            <button class="add" style="border: none;" (click)="openModal(template)">Adicionar</button>
+
+            <ng-template #template>
+                <div class="align-modal">
+                    <div class="modal-content">
+                        <h3>CRIAR OPERADOR</h3>
+                        <input placeholder="Escolher foto" id="img" name="img" accept="image/*" type="File">
+                        <input placeholder="Email" type="text">
+                        <input placeholder="Nome" type="text">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <button class="criar">Criar</button>
+                            <button (click)="modalRef?.hide()" class="sair">Sair</button>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+
+        </div>
+        <div *ngFor="let userData of listOperator" class="list-item">
+            <div class="d-flex align-items-center gap-2">
+                <img class="logos" [src]="userData.photo" alt="">
+                <p class="m-0">{{userData.name}}</p>
+            </div>
+            <div class="mobile-buttons">
+                <button class="editar" (click)="openModal(newOparator)">Editar</button>
+                <button class="sair" (click)="openModal(deleteOperator)">Excluir</button>
+            </div>
+        </div>
+
+        <ng-template #newOparator>
+            <div class="align-modal">
+                <div class="modal-content">
+                    <h3> EDITAR OPERADOR</h3>
+                    <input placeholder="Escolher foto" id="img" name="img" accept="image/*" type="File">
+                    <input placeholder="Email" type="text">
+                    <input placeholder="Nome" type="text">
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <button class="editar">Editar</button>
+                        <button (click)="modalRef?.hide()" class="sair">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template #deleteOperator>
+            <div class="align-modal">
+                <div class="modal-content">
+                    <h3> EXCLUIR OPERADOR</h3>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <button class="criar">Sim</button>
+                        <button (click)="modalRef?.hide()" class="sair">Não</button>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>
